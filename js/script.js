@@ -99,3 +99,15 @@ $(document).mouseup(function (e) {
     }
 });
 
+// Checkbox
+
+$('.checkboxes').find('.check').click(function(){
+    if( $(this).find('input').is(':checked') ) {
+        $(this).removeClass('active');
+        $(this).find('input').removeAttr('checked');
+    } 
+    else {
+        $(this).addClass('active');
+        $(this).find('input').attr('checked', true);
+    }
+});

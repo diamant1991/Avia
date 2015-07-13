@@ -17,3 +17,13 @@
          url('../fonts/HelveticaNeueLight.ttf') format('truetype'),
          url('../fonts/HelveticaNeueLight.svg#HelveticaNeueLight') format('svg');
 }
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helvetica.eot');
+    src: url('../fonts/helvetica.eot') format('embedded-opentype'),
+         url('../fonts/helvetica.woff2') format('woff2'),
+         url('../fonts/helvetica.woff') format('woff'),
+         url('../fonts/helvetica.ttf') format('truetype'),
+         url('../fonts/helvetica.svg#helvetica') format('svg');
+}

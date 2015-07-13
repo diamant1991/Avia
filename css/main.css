@@ -85,6 +85,7 @@ a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(border-radius.htc);
 }
 .var-check {
   float: left;
@@ -129,10 +130,12 @@ a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  behavior: url(border-radius.htc);
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   padding-left: 25px;
+  line-height: 31px;
 }
 .air-top {
   background: url(../images/air-top.png) no-repeat;
@@ -247,4 +250,130 @@ a {
   font-weight: 300;
   font-size: 12px;
   color: #9a9a9a;
+}
+.slc-check {
+  width: 220px;
+}
+.checkboxes {
+  float: left;
+  padding-top: 29px;
+}
+.checkboxes .check {
+  float: left;
+  margin-left: 20px;
+  font-size: 12px;
+  color: #575757;
+  font-family: 'Helvetica';
+}
+.check input[type=checkbox] {
+  position: absolute;
+  left: -10000px;
+}
+.check {
+  background-image: url(../images/checkbox.png);
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  padding-left: 25px;
+  height: 25px;
+  padding-top: 11px;
+  cursor: pointer;
+  position: relative;
+}
+.check.active {
+  background-image: url(../images/checkbox-active.png);
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+}
+.save-btn {
+  width: 100%;
+  min-width: 950px;
+  margin-top: 28px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 10px;
+}
+.save-input {
+  float: right;
+  width: 165px;
+  height: 35px;
+  display: block;
+  outline: 0;
+  background-color: transparent;
+  border: 2px solid #3c9bd3;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #3c9bd3;
+  font-size: 12px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url(border-radius.htc);
+}
+.save-input:hover {
+  background-color: #3c9bd3;
+  color: white;
+}
+.continue-input {
+  float: right;
+  width: 165px;
+  height: 35px;
+  display: block;
+  outline: 0;
+  background-color: #edaa1a;
+  border: 2px solid #edaa1a;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-image: url(../images/next.png);
+  background-repeat: no-repeat;
+  background-position: 82%;
+  padding-right: 12px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url(border-radius.htc);
+}
+.continue-input:hover {
+  background-color: #f6bd43;
+  border-color: #f6bd43;
+}
+.avia {
+  background-image: url(../images/plane.png);
+  background-repeat: no-repeat;
+  background-position: 12%;
+}
+.tickets {
+  background-image: url(../images/train.png);
+  background-repeat: no-repeat;
+  background-position: 8% 8px;
+}
+.rooms {
+  background-image: url(../images/bed.png);
+  background-repeat: no-repeat;
+  background-position: 8%;
+  background-position: 10% 9px;
+}
+.recreation {
+  background-image: url(../images/palm.png);
+  background-repeat: no-repeat;
+  background-position: 12% 9px;
+}
+.exit {
+  background-image: url(../images/exit.png);
+  padding-left: 35px !important;
+  background-repeat: no-repeat;
+  background-position: 31% 10px;
+}
+/*************** ie8 **************/
+
+.ie8 .check,
+.ie9 .check,
+.ie10 .check,
+.ie11 .check {
+  padding-top: 8px;
 }
