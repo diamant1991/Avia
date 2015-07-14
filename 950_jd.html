@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>950 jd</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/ui-slider.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="active tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="container">
+	<div class="choice jd-choice clearfix">
+		<div class="from-whence jd-from">
+			<div class="input-block">
+				<p class="p-title">Откуда</p>
+				<input type="text" class="jd-input">
+				<input type="submit" value="" class="search">
+				<span class="number-jd">2000000</span>
+			</div>	
+		</div>
+		<div class="where jd-from">
+			<div class="input-block">
+				<p class="p-title">Куда</p>
+				<input type="text" class="jd-input">
+				<input type="submit" value="" class="search">
+				<span class="number-jd">2000200</span>
+			</div>	
+		</div>
+		<div class="where jd-from">
+			<div class="refresh">
+				<div class="input-block">
+					<span class="ref-icon">
+						<img src="images/refresh.png" height="27" width="27" alt="">
+					</span>
+					<span class="ref-text">Поменять местами</span>
+				</div>
+			</div>
+		</div>
+	</div><!-- jd choice -->
+	<div class="choice choice-20 clearfix">
+		<div class="date">
+			<div class="input-block">
+				<p class="p-title">Отправление</p>
+				<input type="text" class="date-input-css">
+				<span class="cal-icon"></span>
+			</div>
+		</div>
+		<div class="date timer-block">
+			<div class="input-block clearfix">
+				<span class="timer-icon">
+					<img src="images/timer.png" height="27" width="27" alt="">
+				</span>
+				<span class="timer-text">Время <br>отправление</span>
+			</div>
+		</div>
+		<div class="where">
+			<div class="for-slider-input for-slider-jd">
+				<input type="text" name="amount-time-second" id="amount-time-second" value="00:00 - 24:00" readonly class="input-clock input-clock-jd">
+				<div class="slider-block clearfix">
+					<div id="slider-time-second" class="ui-time ui-jd"></div>
+				</div>
+			</div>
+		</div>
+		<div class="radioblock jd-radio">
+			<div class="radio">отправления</div>
+			<div class="radio">прыбытия</div>
+			<div class="clear"></div>
+			<input type="hidden">
+		</div>
+	</div><!-- choice-20 -->
+	<div class="select-wrapper clearfix">
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Взрослые</p>
+				<p class="medium-p">от 10</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Дети</p>
+				<p class="medium-p">без места</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Дети</p>
+				<p class="medium-p">с местом</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+	</div><!-- select wrapper -->
+</div>
+
+<div class="save-btn save-jd">
+	<div class="container">
+		<div class="info-text">
+			Билеты можно оформить с 05.06.2015 по 19.07.2015
+		</div>
+		<input type="submit" value="Продолжить" class="continue-input">
+		<input type="submit" value="Сохранить" class="save-input">
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/jquery.ui-slider.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+	$(function(){
+		$(".date-input-css").datepicker({ 
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+         selectOtherMonths: true
+		});
+	})
+</script>
+<script src="js/radio.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -124,6 +124,9 @@ a{
 	float: left;
 	width: 220px;
 }
+.jd-choice{
+	margin-left: -60px;
+}
 .where{
 	float: left;
 	width: 220px;
@@ -134,7 +137,10 @@ a{
 	width: 140px;
 	margin-left: 20px;
 }
-
+.jd-from{
+	width: 260px;
+	margin-left: 60px;
+}
 
 .input-block{
 	position: relative;
@@ -160,7 +166,10 @@ a{
 .air-top{
 	background: url(../images/air-top.png)no-repeat;
 	background-position: 5px;
-
+}
+.jd-input{
+	background: url(../images/jd-icon.png)no-repeat;
+	background-position: 5px 7px;
 }
 .date-input-css{
 	position:relative;
@@ -389,6 +398,9 @@ a{
 	background-repeat: no-repeat;
 	background-position: 8% 8px;
 }
+	.active.tickets{
+		background-image: url(../images/train-blue.png);
+	}
 .rooms{
 	background-image: url(../images/bed.png);
 	background-repeat: no-repeat;
@@ -406,6 +418,189 @@ a{
 	background-repeat: no-repeat;
 	background-position: 31% 10px;
 }
+
+.refresh{
+	font-size: 12px;
+	color: #575757;
+	font-family: 'Helvetica';
+	padding-top: 30px;
+}
+
+.number-jd{
+	font-size: 12px;
+	color: #9f9f9f;
+	font-family: 'Helvetica';
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.ref-text{
+	padding-left: 10px;
+	position: relative;
+	top: -8px;
+}
+
+.choice-20{
+	margin-left: -20px;
+}
+
+.timer-icon{
+	display:block;
+	width: 27px;
+	height: 27px;
+	float: left;
+	margin-right: 20px;
+}
+.timer-icon + span{
+	display: block;
+	float: left;
+	font-size: 14px;
+	color: #333;
+	font-weight: 300;
+}
+
+.timer-block{
+	padding-top: 28px;
+}
+
+.ui-jd{
+	width: 185px;
+}
+
+.input-clock-jd{
+	width: 185px;
+	background-position: 50px;
+	padding-left: 20px;
+}
+
+.for-slider-jd{
+	margin-top: 35px;
+	margin-left: 35px;
+}
+
+.jd-radio{
+	padding-top: 55px;
+	float: left;
+	width: 240px;
+	margin-left: 30px;
+}
+.radio {
+	display: block;
+	height: 25px;
+	background: url(../images/radio.png)no-repeat;
+	cursor: pointer;
+	float: left;
+	margin-right: 25px;
+	text-indent: 28px;
+	padding-top: 5px;
+	font-size: 12px;
+	color: #575757;
+	font-family: 'Helvetica';
+}
+
+.radio.active {
+	background: url(../images/radio-active.png)no-repeat;
+}
+
+
+
+.save-jd{
+	margin-top: 65px;
+	position: relative;
+}
+
+.info-text{
+	font-size: 12px;
+	font-family: 'Helvetica';
+	color: #575757;
+	position: absolute;
+	z-index: 2;
+	top: 25px;
+}
+
+.finished-table{
+	width: 100%;
+	font-weight: 300;
+	font-size: 14px;
+
+		img{
+			margin-right: 6px;
+		}
+
+		td{
+			padding-top: 10px;
+
+			&:first-child,
+			&:nth-child(3),
+			&:nth-child(5){
+				color: #aaa;
+			}
+			&:nth-child(2),
+			&:nth-child(4),
+			&:nth-child(6){
+				font-size: 16px;
+				color: #000;
+			}
+		}
+}
+.save-after{
+	.basic;
+	margin-top: 30px;
+	border-top:1px solid #eee;
+	padding: 5px 0;
+}
+
+.save-link{
+	float: left;
+	text-align: center;
+	padding-top: 9.5px;
+}
+
+.continue-link{
+	float: right;
+	text-align: center;
+	padding-top: 9.5px;
+}
+.breadcrumbs{
+	.basic;
+	height: 35px;
+	line-height: 35px;
+	background-color: #f5f5f5;
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+
+		li{
+			float: left;
+			color: #595959;
+		}
+		a{
+			color: #edaa1a;
+		}
+}
+.search-result{
+	.basic;
+	height: 55px;
+	line-height: 55px;
+	font-weight: 300;
+}
+
+.table-result{
+	border-top:1px solid #eee;
+	border-bottom: 1px solid #eee;
+
+		table{
+			width: 100%;
+		}
+		thead{
+			font-family: 'HelveticaBold';
+			font-size: 10px;
+			color: #575757;
+			text-transform: uppercase
+		}
+}
+
+
 
 /*************** ie8 **************/
 .ie8 .check,

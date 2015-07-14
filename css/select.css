@@ -1,66 +1,64 @@
 /*	=	Select */
-.slct {
-	display: block;
-	-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-	        border-radius: 4px;
-	border: 2px solid #eee;
-	background-color: #fff;
-	background-image: url(../images/drop.png);
-	background-repeat: no-repeat;
-	background-position: 97%;
-	width: 285px;
-	height: 35px;
-	font-weight: 300;
-	padding-left: 10px;
-	padding-top: 7px;
-	color: #000;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow: ellipsis;
-	-o-text-overflow: ellipsis;	
-}
 
+.slct {
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #eeeeee;
+  background-color: white;
+  background-image: url(../images/drop.png);
+  background-repeat: no-repeat;
+  background-position: 97%;
+  width: 285px;
+  height: 35px;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-top: 7px;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
 .slct.active {
-	border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 .drop {
-	margin: 0;
-	padding: 0;
-	width: 285px;
-	border: 2px solid #eee;
-	border-top: none;
-	display: none;
-	position: absolute;
-	background: #fff;
-	border-radius: 0 0 3px 3px;
-	z-index:2;
+  margin: 0;
+  padding: 0;
+  width: 285px;
+  border: 2px solid #eeeeee;
+  border-top: none;
+  display: none;
+  position: absolute;
+  background: white;
+  border-radius: 0 0 3px 3px;
+  z-index: 3;
 }
 .drop li {
-	list-style: none;
-	font-weight: 300;
-	cursor: pointer;
-	display: block;
-	color: #000;
-	height: 32px;
-	padding-left: 10px;
-	padding-top: 7px;
+  list-style: none;
+  font-weight: 300;
+  cursor: pointer;
+  display: block;
+  color: black;
+  height: 32px;
+  padding-left: 10px;
+  padding-top: 7px;
 }
 .drop li:hover {
-	background-color: #3c9bd3;
-	color: #fff;
+  background-color: #3c9bd3;
+  color: white;
 }
-
-.slct-140{
-		width: 140px;
-	}
-	.slct-140 + .drop{
-		width: 140px;
-	}
-
-.slct-220{
-		width: 220px;
-	}
-	.slct-220 + .drop{
-		width: 220px;
-	}
+.slct-140 {
+  width: 140px;
+}
+.slct-140 + .drop {
+  width: 140px;
+}
+.slct-220 {
+  width: 220px;
+}
+.slct-220 + .drop {
+  width: 220px;
+}
