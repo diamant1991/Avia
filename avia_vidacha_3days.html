@@ -7,7 +7,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<!--[if IE 8]><html class="ie8"> <![endif]-->
-	<title>Avia vidacha</title>
+	<title>Avia vidacha 3days</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -102,6 +102,115 @@
 				Шаг 1
 			</li>
 		</ul>
+	</div>
+</div>
+
+<div class="price-options">
+	<div class="container">
+		<h5>Варианты лучших цен на период</h5>
+		<div class="text">ВНИМАНИЕ: В таблице приведены сравнительные данные: показана стоимость билета <br> 
+для одного взрослого пассажира!</div>
+	<span class="toogle-btn">Скрыть</span>
+	</div>
+</div>
+
+<div class="table-3days">
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<td></td>
+					<td>Ср, 15 июля</td>
+					<td>чт, 16 июля</td>
+					<td>пт, 17 июля</td>
+					<td>сб, 18 июля</td>
+					<td>вс, 19 июля</td>
+					<td>пн, 20 июля</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>чт, 16 июля</td>
+					<td>Сибирь <br>
+						от <span class="price">25800,85руб.</span></td>
+					<td colspan="5"></td>
+				</tr>
+				<tr>
+					<td>пт, 17 июля</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td>Сибирь <br>
+						от <span class="price">25800,85руб.</span></td>
+					<td colspan="4"></td>
+				</tr>
+				<tr>
+					<td>сб, 18 июля</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td>Сибирь <br>
+						от <span class="price">25800,85руб.</span></td>
+					<td colspan="3"></td>
+				</tr>
+				<tr>
+					<td>вс, 19 июля</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td>Сибирь <br>
+						от <span class="price">25800,85руб.</span></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td>пн, 20 июля</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00 руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td>Сибирь <br>
+						от <span class="price">25800,85руб.</span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>вт, 21 июля</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td class="green">Трансаэро<br>
+						от <span class="price">14246,00руб.</span>
+					</td>
+					<td>Сибирь <br>
+						от <span class="price">25800,85руб.</span></td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 
@@ -462,6 +571,7 @@
 
 
 
+
 <script src="js/jquery1.7.1.js"></script>
 <script src="js/jquery.ui-slider.js"></script>
 <script src="js/datepicker.js"></script>
@@ -515,10 +625,8 @@ jQuery(function() {
         slide: function( event, ui ) {
             var hours1 = Math.floor(ui.values[0] / 60);
             var minutes1 = ui.values[0] - (hours1 * 60);
-
             if(hours1.length < 10) hours1= '0' + hours;
             if(minutes1.length < 10) minutes1 = '0' + minutes;
-
             if(minutes1 == 0) minutes1 = '00';
 
             var hours2 = Math.floor(ui.values[1] / 60);

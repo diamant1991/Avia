@@ -1,8 +1,4 @@
 
-#slider-time {
-	
-}
-
 .ui-slider {
 	position: relative;
 }
@@ -16,6 +12,10 @@
 	cursor: pointer;
 	outline: 0 !important;
 	border:0 !important;
+}
+
+.fil-block .ui-slider .ui-slider-handle{
+	background: url(../images/filter-ui.png) no-repeat;
 }
 .ui-slider .ui-slider-range {
 	position: absolute;

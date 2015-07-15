@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>Hotels 04</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="active rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="hotel2-table">
+	<div class="container">
+		<table>
+			<tr>
+				<td width="115">Номер заказа</td>
+				<td width="135">Расположение</td>
+				<td width="220">Отель</td>
+				<td width="125">Заезд</td>
+				<td width="75">Ночей:</td>
+				<td width="180">Клиенты: <span>Взрослых:1</span></td>
+				<td>Итого:</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><span>Москва (Moscow)</span></td>
+				<td>
+					<span>
+						Каретный двор <br>
+						"постель и завтрак" и Хостел
+					</span>
+				</td>
+				<td>
+					<span>09 июля 2015 г.</span>
+				</td>
+				<td>
+					<span>1</span>
+				</td>
+				<td>
+					<span>Детей: 0</span>
+				</td>
+				<td>
+					<span>1889.98</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="breadcrumbs">
+	<div class="container">
+		<ul class="clearfix">
+			<li>
+				<a href="#">Отели</a>
+				<span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+			</li>
+			<li>
+				Шаг 3
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="info-table-hotels">
+	<div class="container">
+		<h5>Информация</h5>
+		<table>
+			<thead>
+				<tr>
+					<td width="240">Возраст</td>
+					<td width="240">Тип</td>
+					<td width="240">Дата Рождения</td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				<td>32</td>
+				<td>Взрослый</td>
+				<td>01.01.1950</td>
+				<td></td>
+			</tbody>
+			<thead>
+				<tr>
+					<td width="240">Обращение</td>
+					<td width="240">Фамилия*</td>
+					<td width="240">Имя*</td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				<td>Господин</td>
+				<td>Иванов</td>
+				<td>Иван</td>
+				<td></td>
+			</tbody>
+		</table>
+		<div class="info-after">* Все поля заполняются латинскими буквами и арабскими цифрами</div>
+		<div class="save-table clearfix">
+			<a href="#" class="save-input save-link save-disable">Сохранить</a>
+			<a href="#" class="delete-link delete-disable">удалить</a>
+			<a href="#" class="continue-input continue-link edit-link">Редактировать</a>
+		</div>
+	</div>
+</div>
+
+<div class="select-step4">
+	<div class="container">
+		<div class="select-wrapper clearfix">
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Возраст</p>
+				</div>
+				<input type="text">
+			</div>
+			<div class="select-block">
+				<div class="title">
+					<p class="large-p">Тип</p>
+				</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Дата Рождения</p>
+				</div>
+				<input type="text" class="date-input-css">
+				<span class="cal-icon"></span>
+			</div>
+			<div class="select-block slc-check">
+				<div class="radioblock jd-radio customer-radio">
+					<div class="radio">Заказчик</div>
+					<div class="clear"></div>
+					<input type="hidden">
+				</div>
+			</div>
+		</div>
+		<div class="select-wrapper clearfix">
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Обращение</p>
+				</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>
+			<div class="select-block">
+				<div class="title">
+					<p class="large-p">Фамилия*</p>
+				</div>
+				<input type="text">
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Имя*</p>
+				</div>
+				<input type="text">
+			</div>
+		</div>
+		<div class="info-after info-after-pd">* Все поля заполняются латинскими буквами и арабскими цифрами</div>
+		<div class="save-table clearfix">
+			<a href="#" class="save-input save-link">Сохранить</a>
+			<a href="#" class="delete-link">удалить</a>
+			<a href="#" class="continue-input continue-link edit-link">Редактировать</a>
+		</div>
+	</div>
+	
+</div>
+
+<div class="select-step4 select04">
+	<div class="container">
+		<h5>Контакты</h5>
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Телефон</p>
+			</div>
+			<input type="text">
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Email</p>
+			</div>
+			<input type="text">
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div class="select-step4 select04">
+	<div class="container">
+		<h5>Дополнительно</h5>
+		<div class="select-block slc-check" style="width:460px">
+			<div class="title">
+				<p class="large-p">Заметки</p>
+			</div>
+			<input type="text" class="birthday">
+		</div>
+		<div class="radioblock jd-radio ht-radio">
+			<div class="title">Номера для курящих</div>
+			<div class="radio active">не важно</div>
+			<div class="radio">для курящих</div>
+			<div class="radio">для не курящих</div>
+			<div class="clear"></div>
+			<input type="hidden" value="не важно">
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div class="save-after save-after-4">
+	<div class="container">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="continue-input continue-link">Продолжить</a>
+		<a href="#" class="save-input save-link save-next">Сохранить</a>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+	$(function(){
+		$(".date-input-css").datepicker({ 
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+         selectOtherMonths: true
+		});
+	})
+</script>
+<script src="js/radio.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

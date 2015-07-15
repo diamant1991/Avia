@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>Hotels 01</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="active rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="container">
+	<div class="choice clearfix">
+		<div class="from-whence">
+			<div class="input-block">
+				<p class="p-title">Страна</p>
+				<input type="text" class="pd-10">
+				<input type="submit" value="" class="search">
+			</div>	
+		</div>
+		<div class="where">
+			<div class="input-block">
+				<p class="p-title">Город/район</p>
+				<input type="text" class="pd-10">
+				<input type="submit" value="" class="search">
+			</div>	
+		</div>
+		<div class="date">
+			<div class="input-block">
+				<p class="p-title">Дата заезда</p>
+				<input type="text" class="date-input-css" >
+				<span class="cal-icon"></span>
+			</div>	
+		</div>
+	</div>
+	<div class="choice clearfix">
+		<div class="from-whence">
+			<div class="input-block">
+				<p class="p-title">Название</p>
+				<input type="text">
+				<input type="submit" value="" class="search">
+			</div>	
+		</div>
+		<div class="where">
+			<div class="input-block">
+				<p class="p-title">Гражданство туростов</p>
+				<input type="text">
+				<input type="submit" value="" class="search">
+			</div>	
+		</div>
+		<div class="date">
+			<div class="input-block">
+				<p class="p-title">Кол-во ночей</p>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="choice chioce-hotel clearfix">
+		<div class="from-whence">
+			<div class="input-block">
+				<p class="p-title">Отображать вариантов</p>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>	
+		</div>
+		<div class="date-text">
+			<div class="input-block">
+				<p class="p-title">Дата выезда <br> 10 Июль 2015, пятница</p>
+			</div>	
+		</div>
+	</div>
+	<div class="select-wrapper clearfix">
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Взрослыx</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Детей</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">Выбрать</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="checkboxes starcheck clearfix">
+			<div class="title">
+				<p class="large-p">Количество звёзд</p>
+			</div>
+			<div class="check">
+				1
+				<input type="checkbox" value="1">
+			</div>
+			<div class="check">
+				2
+				<input type="checkbox" value="2">
+			</div>
+			<div class="check">
+				3
+				<input type="checkbox" value="3">
+			</div>
+			<div class="check">
+				4
+				<input type="checkbox" value="4">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="nutrition">
+	<div class="container">
+		<h5>Питание</h5>
+		<div class="checkboxes nutrition-check clearfix">
+			<div class="nutrition-block">
+				<div class="check">
+					Само-приготовление пищи
+					<input type="checkbox" value="nut-1">
+				</div>
+				<div class="check">
+					Завтрак+Обед+Ужин
+					<input type="checkbox" value="nut-2">
+				</div>
+				<div class="check">
+					Только Завтрак
+					<input type="checkbox" value="nut-3">
+				</div>
+			</div>
+			<div class="nutrition-block">
+				<div class="check">
+					Английский Завтрак
+					<input type="checkbox" value="nut-4">
+				</div>
+				<div class="check">
+					Завтрак+Ужин
+					<input type="checkbox" value="nut-5">
+				</div>
+				<div class="check">
+					Только Номер
+					<input type="checkbox" value="nut-6">
+				</div>
+			</div>
+			<div class="nutrition-block">
+				<div class="check">
+					Всё Включено
+					<input type="checkbox" value="nut-4">
+				</div>
+				<div class="check">
+					Континентальный Завтрак
+					<input type="checkbox" value="nut-5">
+				</div>
+				<div class="check">
+					Ультра Всё Включено
+					<input type="checkbox" value="nut-6">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="save-btn">
+	<div class="container">
+		<input type="submit" value="Продолжить" class="continue-input">
+		<input type="submit" value="Сохранить" class="save-input">
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+	$(function(){
+		$(".date-input-css").datepicker({ 
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+         selectOtherMonths: true
+		});
+	})
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
