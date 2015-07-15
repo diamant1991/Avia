@@ -11,7 +11,6 @@ div.hasDatepicker {
   z-index: 3 !important;
   font-family: 'HelveticaNeueCyrUltraLight';
   border:2px solid #eee;
-  margin-top: -2px;
   display: none;
   background: #fff !important;
   -webkit-border-radius: 0 4px 4px 4px !important;

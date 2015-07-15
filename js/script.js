@@ -4,8 +4,8 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
-	$('.var-check label').click(function() {
-		$('.var-check label').removeClass('active')
+	$('.var-check a').click(function() {
+		$('.var-check a').removeClass('active')
 		$(this).addClass('active');
 	});
 	

@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>Avia vidacha</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/ui-slider.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="active avia"><a href="#">Авиа</a></li>
+				<li class="tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="avia-step">
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<td width="80">Заказ</td>
+					<td width="195">Маршрут</td>
+					<td width="105">Даты</td>
+					<td>Пассажиры</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						Новый
+					</td>
+					<td>
+						<ul>
+							<li>
+								<img src="images/air-top.png" height="13" width="16" alt="">
+								<span>Москва-> Нью-Йорк</span>
+							</li>
+							<li>
+								<img src="images/air-top.png" height="13" width="16" alt="">
+								<span>Нью-Йорк-> Москва</span>
+							</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>11.06.2015</li>
+							<li>18.06.2015</li>
+						</ul>
+					</td>
+					<td>
+						Взрослых:1
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="breadcrumbs">
+	<div class="container">
+		<ul class="clearfix">
+			<li>
+				<a href="#">Авиа</a>
+				<span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+			</li>
+			<li>
+				Шаг 1
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="price-options">
+	<div class="container">
+		<h5>Варианты лучших цен на выбранные даты</h5>
+		<table>
+			<tr>
+				<td width="215">Вылет из первого пункта</td>
+				<td width="185"><span>11/06/2015</span></td>
+				<td width="215">Вылет из второго пункта</td>
+				<td><span>18/06/2015</span></td>
+			</tr>
+			<tr>
+				<td>Найдено вариантов: <span>200</span></td>
+				<td>Отображается: <span>50</span></td>
+				<td>Взрослых: <span>1</span></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="filter">
+	<div class="container">
+		<div class="sidebar">
+			<form action="">
+				<input type="submit" value="применить" class="apply-s">
+			</form>
+			<div class="fil-block fil-radio">
+				<div class="title">Вид перелета</div>
+				<div class="radioblock">
+					<div class="radio">Прямой</div>
+					<div class="radio">Одна пересадка</div>
+					<div class="radio">Более 2-х пересадок</div>
+					<div class="clear"></div>
+					<input type="hidden">
+				</div>
+			</div>
+			<div class="fil-block fil-ui">
+				<div class="title">Время вылета</div>
+				<div class="city">Москва-Санкт-Петербург</div>
+				<input type="text" name="amount-time" id="amount-time" value="00:00 - 24:00" readonly class="input-clock">
+				<div class="slider-block clearfix">
+					<div id="slider-time" class="ui-time ui-filter"></div>
+				</div>
+				<div class="city">Санкт-Петербург-Москва</div>
+				<input type="text" name="amount-time" id="amount-time-second" value="00:00 - 24:00" readonly class="input-clock">
+				<div class="slider-block clearfix">
+					<div id="slider-time-second" class="ui-time ui-filter"></div>
+				</div>
+			</div>
+			<div class="fil-block fil-ui">
+				<div class="title">Время прилёта</div>
+				<div class="city">Москва-Санкт-Петербург</div>
+				<input type="text" name="amount-time" id="amount-time-3" value="00:00 - 24:00" readonly class="input-clock">
+				<div class="slider-block clearfix">
+					<div id="slider-time-3" class="ui-time ui-filter"></div>
+				</div>
+				<div class="city">Санкт-Петербург-Москва</div>
+				<input type="text" name="amount-time" id="amount-time-4" value="00:00 - 24:00" readonly class="input-clock">
+				<div class="slider-block clearfix">
+					<div id="slider-time-4" class="ui-time ui-filter"></div>
+				</div>
+			</div>
+			<div class="fil-block fil-radio">
+				<div class="title">Аэропорт вылета</div>
+				<div class="radioblock">
+					<div class="radio">Домодедово</div>
+					<div class="radio">Внуково</div>
+					<div class="radio">Шереметьево</div>
+					<div class="clear"></div>
+					<input type="hidden">
+				</div>
+			</div>
+			<div class="fil-block fil-radio">
+				<div class="title">Авиакомпания <br> перевозчик</div>
+				<div class="radioblock">
+					<div class="radio">Только заявленная</div>
+					<div class="radio">Заявленная <br>
+					или выполняющая</div>
+					<div class="clear"></div>
+					<input type="hidden">
+				</div>
+			</div>
+			<div class="fil-block">
+				<div class="checkboxes clearfix">
+					<div class="check">
+						Аэрофлот (SU)
+						<input type="checkbox" value="su" />
+					</div>
+					<div class="check">
+						Глобус (GH)
+						<input type="checkbox" value="gh" />
+					</div>
+					<div class="check">
+						Россия (FV)
+						<input type="checkbox" value="fv" />
+					</div>
+					<div class="check">
+						Сибирь (S7)
+						<input type="checkbox" value="s7" />
+					</div>
+					<div class="check">
+						Трансаэро (UN)
+						<input type="checkbox" value="un" />
+					</div>
+				</div>
+			</div>
+			<div class="fil-block">
+				<input type="submit" value="применить" class="apply-s">
+			</div>
+		</div>
+
+		<div class="content">
+			
+		</div>
+	</div>
+</div>	
+
+
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/jquery.ui-slider.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+	$(function(){
+		$(".date-input-css").datepicker({ 
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+         selectOtherMonths: true
+		});
+	})
+</script>
+<script src="js/radio.js"></script>
+<script src="js/script.js"></script>
+<script>
+	jQuery(function() {
+    jQuery('#slider-time-3').slider({
+        range: true,
+        min: 0,
+        max: 1440,
+        step: 15,
+        values: [ 0, 1440 ],
+        slide: function( event, ui ) {
+            var hours1 = Math.floor(ui.values[0] / 60);
+            var minutes1 = ui.values[0] - (hours1 * 60);
+
+            if(hours1.length < 10) hours1= '0' + hours;
+            if(minutes1.length < 10) minutes1 = '0' + minutes;
+
+            if(minutes1 == 0) minutes1 = '00';
+
+            var hours2 = Math.floor(ui.values[1] / 60);
+            var minutes2 = ui.values[1] - (hours2 * 60);
+
+            if(hours2.length < 10) hours2= '0' + hours;
+            if(minutes2.length < 10) minutes2 = '0' + minutes;
+
+            if(minutes2 == 0) minutes2 = '00';
+
+            jQuery('#amount-time-3').val(hours1+':'+minutes1+' - '+hours2+':'+minutes2 );
+        }
+    });
+});
+jQuery(function() {
+    jQuery('#slider-time-4').slider({
+        range: true,
+        min: 0,
+        max: 1440,
+        step: 15,
+        values: [ 0, 1440 ],
+        slide: function( event, ui ) {
+            var hours1 = Math.floor(ui.values[0] / 60);
+            var minutes1 = ui.values[0] - (hours1 * 60);
+
+            if(hours1.length < 10) hours1= '0' + hours;
+            if(minutes1.length < 10) minutes1 = '0' + minutes;
+
+            if(minutes1 == 0) minutes1 = '00';
+
+            var hours2 = Math.floor(ui.values[1] / 60);
+            var minutes2 = ui.values[1] - (hours2 * 60);
+
+            if(hours2.length < 10) hours2= '0' + hours;
+            if(minutes2.length < 10) minutes2 = '0' + minutes;
+
+            if(minutes2 == 0) minutes2 = '00';
+
+            jQuery('#amount-time-4').val(hours1+':'+minutes1+' - '+hours2+':'+minutes2 );
+        }
+    });
+});
+</script>
+</body>
+</html>

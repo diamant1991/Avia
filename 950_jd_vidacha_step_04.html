@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>950_jd_vidacha_step_04</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="active tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="status-table">
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<td>Заказ:</td>
+					<td>Поезд:</td>
+					<td>Отправление:</td>
+					<td>Маршрут следования:</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="80">Новый</td>
+					<td width="90">
+						<img src="images/jd-icon.png" height="15" width="14" alt="">
+						<span>010А</span>
+					</td>
+					<td width="120">29.06.2015</td>
+					<td class="city-finish">москва (московская)->псков-пасс (октябрьская)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- status table -->
+
+<div class="save-after">
+	<div class="container">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="continue-input continue-link">Продолжить</a>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div class="breadcrumbs">
+	<div class="container">
+		<ul class="clearfix">
+			<li>
+				<a href="#">Ж/Д билеты</a>
+				<span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+			</li>
+			<li>
+				Шаг 4
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="status-text">
+	<div class="container">
+		Купленный билет можно будет получить на на транзакционных терминалах самообслуживания (ТТС) или в любой кассе ОАО "РЖД". В международном сообщении можно получить только в международных кассах ОАО «РЖД»
+	</div>
+</div>
+
+<div class="info-table">
+	<div class="container">
+		<h5>Информация о пасажирах</h5>
+		<table>
+			<thead>
+				<tr>
+					<td>Возраст</td>
+					<td>Тип документа</td>
+					<td>Номер*</td>
+					<td>Государтсво выдачи документа</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Взрослый</td>
+					<td>Российский паспорт</td>
+					<td>543568</td>
+					<td>Россия</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="text">
+			Номер документа: подряд 10 цифр. Отчество: не менее 2-х букв.Формат ввода данных: Номер документа: подряд 10 цифр. Отчество: не менее 2-х букв. <br>
+			* Вводить серию и номер всех документов следует подряд, пропуская знаки "-", "№" и пробелы. <br>
+			Римское число, следует вводить с помощью ЛАТИНСКИХ букв I,V и X <br>
+			Российский паспорт 92 97 005812 - следует ввести 9297005812 <br>
+			Свидетельство о рождении I-МЮ №134567 - следует ввести IМЮ134567 (символ I - латинский МЮ - русские)
+		</div>
+	</div>
+</div>
+
+<div class="info-table">
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<td>Фамилия**</td>
+					<td>Имя**</td>
+					<td>Отчество*</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Иванов</td>
+					<td>Иван</td>
+					<td>Иванович</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<thead>
+				<tr>
+					<td>Пол</td>
+					<td>Дата Рождения</td>
+					<td>Место Рождения</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Мужчина</td>
+					<td>01.01.1950</td>
+					<td>г.Москва</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="text">
+		** Фамилии, имена и отчества пассажиров вносятся полностью <br>
+		При внесении имени иностранных граждан допускается указывать только фамилию и имя. Точное написание фамилий иностранных граждан можно посмотреть <br>
+		в конце иностранного паспорта, где вклеена виза РФ
+		</div>
+		<div class="save-table clearfix">
+			<a href="#" class="save-input save-link save-disable">Сохранить</a>
+			<a href="#" class="continue-input continue-link edit-link">Редактировать</a>
+		</div>
+	</div>
+</div>
+
+<div class="select-step4">
+	<div class="container">
+		<div class="select-wrapper clearfix">
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Возраст</p>
+				</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Тип документа</p>
+				</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Номер*</p>
+				</div>
+				<input type="text">
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Государство выдачи документа</p>
+				</div>
+				<input type="text">
+				<input type="submit" value="" class="search">
+			</div>
+		</div>
+		<div class="text">
+			Номер документа: подряд 10 цифр. Отчество: не менее 2-х букв.Формат ввода данных: Номер документа: подряд 10 цифр. Отчество: не менее 2-х букв. <br>
+			* Вводить серию и номер всех документов следует подряд, пропуская знаки "-", "№" и пробелы. <br>
+			Римское число, следует вводить с помощью ЛАТИНСКИХ букв I,V и X <br>
+			Российский паспорт 92 97 005812 - следует ввести 9297005812 <br>
+			Свидетельство о рождении I-МЮ №134567 - следует ввести IМЮ134567 (символ I - латинский МЮ - русские)
+		</div>
+	</div>
+</div>
+
+<div class="select-step4">
+	<div class="container">
+		<div class="select-wrapper clearfix">
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Фамилия**</p>
+				</div>
+				<input type="text">
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Имя**</p>
+				</div>
+				<input type="text">
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Отчество**</p>
+				</div>
+				<input type="text">
+			</div>
+		</div>
+		<div class="select-wrapper clearfix">
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Пол</p>
+				</div>
+				<div class="select">
+					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+					<ul class="drop">
+						<li>Select 1</li>
+						<li>Select 2</li>
+						<li>Select 3</li>
+						<li>Select 4</li>
+					</ul>
+					<input type="hidden" id="select">
+				</div>
+			</div>
+			<div class="select-block slc-check">
+				<div class="title">
+					<p class="large-p">Дата Рождения</p>
+				</div>
+				<input type="text" class="date-input-css">
+				<span class="cal-icon"></span>
+			</div>
+			<div class="select-block slc-check large-select">
+				<div class="title">
+					<p class="large-p">Место Рождения</p>
+				</div>
+				<input type="text" class="birthday">
+			</div>
+		</div>
+		<div class="text">
+			** Фамилии, имена и отчества пассажиров вносятся полностью <br>
+			При внесении имени иностранных граждан допускается указывать только фамилию и имя. Точное написание фамилий иностранных граждан можно посмотреть <br>
+			в конце иностранного паспорта, где вклеена виза РФ
+		</div>
+		<div class="clearfix" style="padding-bottom: 20px">
+			<a href="#" class="save-input save-link">Сохранить</a>
+			<a href="#" class="continue-input continue-link edit-link edit-link-disable">Редактировать</a>
+		</div>
+	</div>
+</div>
+
+<div class="save-after save-after-4">
+	<div class="container">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="continue-input continue-link">Продолжить</a>
+		<a href="#" class="save-input save-link save-next">Сохранить</a>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/radio.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+	$(function(){
+		$(".date-input-css").datepicker({ 
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+         selectOtherMonths: true
+		});
+	})
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -12,7 +12,6 @@
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/reset.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/ui-slider.css">
 	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
@@ -54,11 +53,11 @@
 	<div class="container">
 		<table class="finished-table">
 			<tr>
-				<td>Откуда</td>
-				<td><img src="images/jd-icon.png" height="15" width="14" alt="">Москва (Московская)</td>
-				<td>Куда</td>
-				<td><img src="images/jd-icon.png" height="15" width="14" alt="">Псков-пасс(Октябрьская)</td>
-				<td>Отправление</td>
+				<td width="85">Откуда</td>
+				<td width="240"><img src="images/jd-icon.png" height="15" width="14" alt="">Москва (Московская)</td>
+				<td width="80">Куда</td>
+				<td width="240"><img src="images/jd-icon.png" height="15" width="14" alt="">Псков-пасс(Октябрьская)</td>
+				<td width="150">Отправление</td>
 				<td>08.11.2014</td>
 			</tr>
 		</table>
@@ -93,54 +92,191 @@
 	</div>
 </div>
 
-<div class="table-result">
-	<div class="container tableradio">
-		<table>
-			<thead>
-				<tr>
-					<td>№</td>
-					<td>название</td>
-					<td>маршрут</td>
-					<td>отпр.</td>
-					<td>приб.</td>
-					<td>в пути</td>
-					<td>эл.рег</td>
-					<td>бронь</td>
-					<td colspan="2">свободные места</td>
-					<td>стоимость, руб</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<div class="radio">663Р</div>
-						<input type="hidden">
-					</td>
-					<td></td>
-					<td>
-						МОСКВА ОКТ → <br>
-						ПСКОВ ПАСС
-					</td>
-					<td>18:30</td>
-					<td>07:30</td>
-					<td>13:00</td>
-					<td><img src="images/reg-disable.png" height="14" width="19" alt=""> </td>
-					<td><img src="images/reserv-active.png" height="19" width="19" alt=""> </td>
-					<td>Люкс</td>
-					<td>
-						<ul>
-							<li>2 Целых купе</li>
-							<li>2 Верхних</li>
-							<li>2 Нижних</li>
-						</ul>
-					</td>
-					<td>
-						7056.7-8483.4
-					</td>
-				</tr>
-			</tbody>
-		</table>
+<div class="tableradio">
+	<div class="table-result">
+		<div class="container">
+			<table>
+				<thead>
+					<tr>
+						<td>№</td>
+						<td>название</td>
+						<td>маршрут</td>
+						<td>отпр.</td>
+						<td>приб.</td>
+						<td>в пути</td>
+						<td>эл.рег</td>
+						<td>бронь</td>
+						<td colspan="2">свободные места</td>
+						<td>стоимость, руб</td>
+					</tr>
+					<tr class="type-tr">
+						<td colspan="8"></td>
+						<td>тип</td>
+						<td>кол-во</td>
+						<td>ржд</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="radio-td" width="80">
+							<div class="radio">663Р</div>
+							<input type="hidden">
+						</td>
+						<td width="80"></td>
+						<td class="city-td" width="130">
+							москва окт → <br>
+							псков пасс
+						</td>
+						<td class="date-1" width="60">18:30</td>
+						<td class="date-2" width="60">07:30</td>
+						<td class="sum-date" width="70">13:00</td>
+						<td width="65"><img src="images/reg-disable.png" height="14" width="19" alt=""> </td>
+						<td width="80"><img src="images/reserv-active.png" height="19" width="19" alt=""> </td>
+						<td class="type-td" width="70">Люкс</td>
+						<td class="list-td" width="125">
+							<ul>
+								<li>2 Целых купе</li>
+								<li>2 Верхних</li>
+								<li>2 Нижних</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							7056.7-8483.4
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8"></td>
+						<td class="type-td">Купе</td>
+						<td class="list-td">
+							<ul>
+								<li>16 Целых купе</li>
+								<li>56 Верхних</li>
+								<li>38 Нижних</li>
+								<li>3 Мужских</li>
+								<li>4 Смешанных</li>
+								<li>8 Женских</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							4268.6-4674.2
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8"></td>
+						<td class="type-td">Плац</td>
+						<td class="list-td">
+							<ul>
+								<li>32 Верхних</li>
+								<li>38 Верхних бок.</li>
+								<li>23 Нижних бок.</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							2190.3
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8"></td>
+						<td class="type-td">Сид</td>
+						<td class="list-td">
+							<ul>
+								<li>15 Свободных</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							1258.9
+						</td>
+					</tr>
+				</tbody>
+			</table>
 
+		</div>
+	</div>
+	<div class="table-result">
+		<div class="container">
+			<table>
+				<tbody>
+					<tr>
+						<td class="radio-td" width="80">
+							<div class="radio">662Р</div>
+						</td>
+						<td width="80"></td>
+						<td class="city-td" width="130">
+							москва окт → <br>
+							псков пасс
+						</td>
+						<td class="date-1" width="60">18:30</td>
+						<td class="date-2" width="60">07:30</td>
+						<td class="sum-date" width="70">13:00</td>
+						<td width="65"><img src="images/reg-active.png" height="14" width="19" alt=""> </td>
+						<td width="80"><img src="images/reserv-disable.png" height="19" width="19" alt=""> </td>
+						<td class="type-td" width="70">Люкс</td>
+						<td class="list-td" width="125">
+							<ul>
+								<li>2 Целых купе</li>
+								<li>2 Верхних</li>
+								<li>2 Нижних</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							7056.7-8483.4
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8"></td>
+						<td class="type-td">Купе</td>
+						<td class="list-td">
+							<ul>
+								<li>16 Целых купе</li>
+								<li>56 Верхних</li>
+								<li>38 Нижних</li>
+								<li>3 Мужских</li>
+								<li>4 Смешанных</li>
+								<li>8 Женских</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							4268.6-4674.2
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8"></td>
+						<td class="type-td">Плац</td>
+						<td class="list-td">
+							<ul>
+								<li>32 Верхних</li>
+								<li>38 Верхних бок.</li>
+								<li>23 Нижних бок.</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							2190.3
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8"></td>
+						<td class="type-td">Сид</td>
+						<td class="list-td">
+							<ul>
+								<li>15 Свободных</li>
+							</ul>
+						</td>
+						<td class="cost-td">
+							1258.9
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div><!-- tableradio -->
+
+<div class="save-after save-after-radio">
+	<div class="container">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="continue-input continue-link">Продолжить</a>
+		<div class="clear"></div>
 	</div>
 </div>
 

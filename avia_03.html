@@ -7,7 +7,7 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<!--[if IE 8]><html class="ie8"> <![endif]-->
-	<title>Avia main</title>
+	<title>Avia 03</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
@@ -22,7 +22,6 @@
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
 <body>
-
 <div class="top-panel">
 	<div class="container clearfix">
 		<div class="left-list">
@@ -57,10 +56,10 @@
 					<a href="#" class="">Туда и обратно</a>
 				</div>
 				<div class="var-check">
-					<a href="#" class="active">Только туда</a>
+					<a href="#" class="">Только туда</a>
 				</div>
 				<div class="var-check">
-					<a href="#" class="">Составной маршрут</a>
+					<a href="#" class="active">Составной маршрут</a>
 				</div>
 			</div>
 		</div>
@@ -76,11 +75,6 @@
 				<input type="text" class="air-top">
 				<input type="submit" value="" class="search">
 			</div>	
-			<div class="input-block">
-				<p class="p-title">Откуда</p>
-				<input type="text" class="air-bot">
-				<input type="submit" value="" class="search">
-			</div>
 		</div>
 		<div class="where">
 			<div class="input-block">
@@ -88,11 +82,6 @@
 				<input type="text" class="air-top">
 				<input type="submit" value="" class="search">
 			</div>	
-			<div class="input-block">
-				<p class="p-title">Куда</p>
-				<input type="text" class="air-bot">
-				<input type="submit" value="" class="search">
-			</div>
 		</div>
 		<div class="date">
 			<div class="input-block">
@@ -100,33 +89,13 @@
 				<input type="text" class="date-input-css" >
 				<span class="cal-icon"></span>
 			</div>	
-			<div class="input-block">
-				<p class="p-title">Дата</p>
-				<input type="text" class="date-input-css">
-				<span class="cal-icon"></span>
-			</div>
 		</div>
 		<div class="time-air">
 			<div class="for-slider-input">
 				<p class="p-title">Время вылета</p>
 				<input type="text" name="amount-time" id="amount-time" value="00:00 - 24:00" readonly class="input-clock">
 				<div class="slider-block clearfix">
-					<div id="slider-time" class="ui-time"></div>
-					<div class="slider-icons">
-						<span>
-							<img src="images/timer.png" height="27" width="27" alt="">
-						</span>
-						<span>
-							<img src="images/man.png" height="27" width="27" alt="">
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="for-slider-input">
-				<p class="p-title">Время вылета</p>
-				<input type="text" name="amount-time-second" id="amount-time-second" value="00:00 - 24:00" readonly class="input-clock">
-				<div class="slider-block clearfix">
-					<div id="slider-time-second" class="ui-time"></div>
+					<div id="slider-time" class="ui-time ui-avia3"></div>
 					<div class="slider-icons">
 						<span>
 							<img src="images/timer.png" height="27" width="27" alt="">
@@ -138,7 +107,86 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- choice -->
+	<div class="choice clearfix">
+		<div class="from-whence">
+			<div class="input-block">
+				<p class="p-title">Откуда</p>
+				<input type="text" class="car-icon">
+				<input type="submit" value="" class="search">
+			</div>	
+		</div>
+		<div class="where">
+			<div class="input-block">
+				<p class="p-title">Куда</p>
+				<input type="text" class="car-icon">
+				<input type="submit" value="" class="search">
+			</div>	
+		</div>
+		<div class="date">
+			<div class="input-block">
+				<p class="p-title">Дата</p>
+				<input type="text" class="date-input-css" >
+				<span class="cal-icon"></span>
+			</div>	
+		</div>
+		<div class="time-air">
+			<div class="for-slider-input">
+				<div class="slider-block clearfix">
+					<div class="slider-icons slider-icons-avia3">
+						<span>
+							<img src="images/close.png" height="27" width="27" alt="">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- choice -->
+	<div class="choice clearfix">
+		<div class="from-whence">
+			<div class="input-block">
+				<p class="p-title">Откуда</p>
+				<input type="text" class="air-top">
+				<input type="submit" value="" class="search">
+			</div>
+			<a href="#" class="add-link">Добавить перелёт</a>	
+		</div>
+		<div class="where">
+			<div class="input-block">
+				<p class="p-title">Куда</p>
+				<input type="text" class="air-top">
+				<input type="submit" value="" class="search">
+			</div>
+			<a href="#" class="add-link">Добавить наземный сегмент</a>		
+		</div>
+		<div class="date">
+			<div class="input-block">
+				<p class="p-title">Дата</p>
+				<input type="text" class="date-input-css" >
+				<span class="cal-icon"></span>
+			</div>	
+		</div>
+		<div class="time-air">
+			<div class="for-slider-input">
+				<p class="p-title">Время вылета</p>
+				<input type="text" name="amount-time" id="amount-time-second" value="00:00 - 24:00" readonly class="input-clock">
+				<div class="slider-block clearfix">
+					<div id="slider-time-second" class="ui-time ui-avia3"></div>
+					<div class="slider-icons">
+						<span>
+							<img src="images/close.png" height="27" width="27" alt="">
+						</span>
+						<span>
+							<img src="images/timer.png" height="27" width="27" alt="">
+						</span>
+						<span>
+							<img src="images/man.png" height="27" width="27" alt="">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- choice -->
 	<div class="select-wrapper clearfix">
 		<div class="select-block">
 			<div class="title">
@@ -204,7 +252,8 @@
 				<input type="hidden" id="select">
 			</div>
 		</div>
-	</div><!-- select wrapper -->
+	</div>
+
 	<div class="select-wrapper clearfix">
 		<div class="select-block slc-check">
 			<div class="title">
@@ -224,15 +273,15 @@
 		<div class="checkboxes clearfix">
 			<div class="check">
 				С ограничением при бронировании или выписке
-				<input type="checkbox" value="jQuery" />
+				<input type="checkbox" value="jQuery">
 			</div>
 			<div class="check">
 				Со штрафами на возврат
-				<input type="checkbox" value="HTML" />
+				<input type="checkbox" value="HTML">
 			</div>
 			<div class="check">
 				± 3 дня
-				<input type="checkbox" value="CSS" />
+				<input type="checkbox" value="CSS">
 			</div>
 		</div>
 	</div>
@@ -253,7 +302,7 @@
 			</div>
 		</div>
 	</div>
-</div><!-- container -->
+</div>
 
 <div class="save-btn">
 	<div class="container">
@@ -264,8 +313,6 @@
 </div>
 
 
-
-<!-- <script src="js/jquery.js"></script> -->
 <script src="js/jquery1.7.1.js"></script>
 <script src="js/jquery.ui-slider.js"></script>
 <script src="js/datepicker.js"></script>
@@ -281,3 +328,4 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+

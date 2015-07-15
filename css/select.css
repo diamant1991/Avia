@@ -2,6 +2,9 @@
 
 .slct {
   display: block;
+  font-family: 'OpenSansLight';
+  font-size: 16px;
+  color: #000;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -12,7 +15,6 @@
   background-position: 97%;
   width: 285px;
   height: 35px;
-  font-weight: 300;
   padding-left: 10px;
   padding-top: 7px;
   color: black;
@@ -38,13 +40,14 @@
 }
 .drop li {
   list-style: none;
-  font-weight: 300;
   cursor: pointer;
   display: block;
   color: black;
   height: 32px;
   padding-left: 10px;
   padding-top: 7px;
+  font-family: 'OpenSansLight';
+  font-size: 16px;
 }
 .drop li:hover {
   background-color: #3c9bd3;

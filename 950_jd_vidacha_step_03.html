@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>950_jd_vidacha_step_03</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.less">
+	<script src="js/less.min.js"></script>
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="active tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="status-table">
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<td>Заказ:</td>
+					<td>Поезд:</td>
+					<td>Отправление:</td>
+					<td>Маршрут следования:</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="80">Новый</td>
+					<td width="90">
+						<img src="images/jd-icon.png" height="15" width="14" alt="">
+						<span>010А</span>
+					</td>
+					<td width="120">29.06.2015</td>
+					<td class="city-finish">москва (московская)->псков-пасс (октябрьская)</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><!-- status table -->
+
+<div class="save-after">
+	<div class="container">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="continue-input continue-link">Продолжить</a>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div class="breadcrumbs">
+	<div class="container">
+		<ul class="clearfix">
+			<li>
+				<a href="#">Ж/Д билеты</a>
+				<span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+			</li>
+			<li>
+				Шаг 3
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="status-text">
+	<div class="container">
+		Купленный билет можно будет получить на на транзакционных терминалах самообслуживания (ТТС) или в любой кассе ОАО "РЖД". В международном сообщении можно получить только в международных кассах ОАО «РЖД»
+	</div>
+</div>
+
+<div class="table-step3">
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<td width="335">Дополнительные требования к местам</td>
+					<td width="240">Свободные места</td>
+					<td>Свободные купе \ размещения</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="checkboxes clearfix">
+							<div class="check">
+								Бронирование на 3 часа
+								<input type="checkbox" value="jQuery">
+							</div>
+							<div class="check">
+								Электронная регистрация
+								<input type="checkbox" value="HTML">
+							</div>
+						</div>
+					</td>
+					<td>1Ц, 2Ц, 9М, 11Ц, 12Ц</td>
+					<td>
+						<ul>
+							<li>002 Целых купе</li>
+							<li>02 Верхних</li>
+							<li>03 Нижних</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="diapazon">
+	<div class="container clearfix">
+		<div class="diap-block">
+			<h5>Диапазон мест</h5>
+			<div class="diap-input">
+				<p>от</p>
+				<input type="text">
+			</div>
+			<div class="diap-input">
+				<p>до</p>
+				<input type="text">
+			</div>
+			<div class="clear"></div>	
+			<div class="div-p">Требуется полных мест 1</div>
+		</div>
+		<div class="radioblock radio_step3">
+			<div class="title">Тип купе</div>
+			<div class="radio">Мужское</div>
+			<div class="radio active">Женское</div>
+			<div class="radio">Общее</div>
+			<div class="clear"></div>
+			<input type="hidden" value="прыбытия">
+		</div>
+	</div>
+</div>
+
+<div class="diapazon">
+	<div class="container">
+		<div class="contact clearfix">
+			<h5>Контактная информация</h5>
+			<input type="text" placeholder="email@email.com" class="post-in">
+			<input type="text" placeholder="7xxxxxxxxxxxxxx" class="tel-in">
+			<span class="text">Номер мобильного телефона одного из операторов РФ <br>в формате 7xxxxxxxxxx (11 цифр)</span>
+		</div>
+	</div>
+</div>
+
+<div class="save-after save-after-radio">
+	<div class="container">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="continue-input continue-link">Продолжить</a>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/radio.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
