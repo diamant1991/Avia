@@ -15,8 +15,6 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/select.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/main.less">
-	<script src="js/less.min.js"></script>
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
 <body>
@@ -103,240 +101,486 @@
 	</div>
 </div>
 
-<div class="select-step4 select-avia-2">
-	<div class="container">
-		<div class="select-wrapper clearfix">
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Возраст</p>
+
+
+
+
+<div class="passenger-wrapper">
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="main-pass">Информация о пассажирах</div>
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Возраст</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
 				</div>
-				<div class="select">
-					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
-					<ul class="drop">
-						<li>Select 1</li>
-						<li>Select 2</li>
-						<li>Select 3</li>
-						<li>Select 4</li>
-					</ul>
-					<input type="hidden" id="select">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Пол</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Обращение</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
 				</div>
 			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Пол</p>
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Фамилия</p>
+					</div>
+					<input type="text">
 				</div>
-				<div class="select">
-					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
-					<ul class="drop">
-						<li>Select 1</li>
-						<li>Select 2</li>
-						<li>Select 3</li>
-						<li>Select 4</li>
-					</ul>
-					<input type="hidden" id="select">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Имя</p>
+					</div>
+					<input type="text">
 				</div>
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Обращение</p>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Дата Рождения</p>
+					</div>
+					<input type="text">
 				</div>
-				<div class="select">
-					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
-					<ul class="drop">
-						<li>Select 1</li>
-						<li>Select 2</li>
-						<li>Select 3</li>
-						<li>Select 4</li>
-					</ul>
-					<input type="hidden" id="select">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Гражданство</p>
+					</div>
+					<input type="text">
+					<input type="submit" value="" class="search">
 				</div>
-			</div>
-		</div>
-		<div class="select-wrapper clearfix">
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Фамилия</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Имя</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Дата Рождения</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Гражданство</p>
-				</div>
-				<input type="text">
-				<input type="submit" value="" class="search">
 			</div>
 		</div>
 	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Государство выдачи документа</p>
+					</div>
+					<input type="text">
+					<input type="submit" value="" class="search">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Тип документа</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Обращение</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Срок действия документа</p>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Государство выдачи документа</p>
+					</div>
+					<input type="text">
+					<input type="submit" value="" class="search">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Тип документа</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Обращение</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Срок действия документа</p>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Телефон мобильный</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Телефон домашний</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Телефон служебный</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">E-mail</p>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Тип бонусной карты</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Номер бонусной карты</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check large-select">
+					<div class="title">
+						<p class="large-p">Дополнительная информация о пассажире</p>
+					</div>
+					<input type="text" class="birthday">
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 
-<div class="select-step4 select-avia-2">
-	<div class="container">
-		<div class="select-wrapper clearfix">
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Государство выдачи документа</p>
+<div class="passenger-wrapper">
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="main-pass">Информация о пассажирах</div>
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Возраст</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
 				</div>
-				<input type="text">
-				<input type="submit" value="" class="search">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Пол</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Обращение</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
 			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Тип документа</p>
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Фамилия</p>
+					</div>
+					<input type="text">
 				</div>
-				<div class="select">
-					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
-					<ul class="drop">
-						<li>Select 1</li>
-						<li>Select 2</li>
-						<li>Select 3</li>
-						<li>Select 4</li>
-					</ul>
-					<input type="hidden" id="select">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Имя</p>
+					</div>
+					<input type="text">
 				</div>
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Обращение</p>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Дата Рождения</p>
+					</div>
+					<input type="text">
 				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Срок действия документа</p>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Гражданство</p>
+					</div>
+					<input type="text">
+					<input type="submit" value="" class="search">
 				</div>
-				<input type="text">
 			</div>
 		</div>
 	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Государство выдачи документа</p>
+					</div>
+					<input type="text">
+					<input type="submit" value="" class="search">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Тип документа</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Обращение</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Срок действия документа</p>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Государство выдачи документа</p>
+					</div>
+					<input type="text">
+					<input type="submit" value="" class="search">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Тип документа</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Обращение</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Срок действия документа</p>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Телефон мобильный</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Телефон домашний</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Телефон служебный</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">E-mail</p>
+					</div>
+					<input type="text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-step4 select-avia-2">
+		<div class="container">
+			<div class="select-wrapper clearfix">
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Тип бонусной карты</p>
+					</div>
+					<input type="text">
+				</div>
+				<div class="select-block slc-check">
+					<div class="title">
+						<p class="large-p">Номер бонусной карты</p>
+					</div>
+					<div class="select">
+						<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
+						<ul class="drop">
+							<li>Select 1</li>
+							<li>Select 2</li>
+							<li>Select 3</li>
+							<li>Select 4</li>
+						</ul>
+						<input type="hidden" id="select">
+					</div>
+				</div>
+				<div class="select-block slc-check large-select">
+					<div class="title">
+						<p class="large-p">Дополнительная информация о пассажире</p>
+					</div>
+					<input type="text" class="birthday">
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 
-<div class="select-step4 select-avia-2">
-	<div class="container">
-		<div class="select-wrapper clearfix">
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Государство выдачи документа</p>
-				</div>
-				<input type="text">
-				<input type="submit" value="" class="search">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Тип документа</p>
-				</div>
-				<div class="select">
-					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
-					<ul class="drop">
-						<li>Select 1</li>
-						<li>Select 2</li>
-						<li>Select 3</li>
-						<li>Select 4</li>
-					</ul>
-					<input type="hidden" id="select">
-				</div>
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Обращение</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Срок действия документа</p>
-				</div>
-				<input type="text">
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="select-step4 select-avia-2">
-	<div class="container">
-		<div class="select-wrapper clearfix">
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Телефон мобильный</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Телефон домашний</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Телефон служебный</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">E-mail</p>
-				</div>
-				<input type="text">
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="select-step4 select-avia-2">
-	<div class="container">
-		<div class="select-wrapper clearfix">
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Тип бонусной карты</p>
-				</div>
-				<input type="text">
-			</div>
-			<div class="select-block slc-check">
-				<div class="title">
-					<p class="large-p">Номер бонусной карты</p>
-				</div>
-				<div class="select">
-					<a href="javascript:void(0);" class="slct slct-220">Выбрать</a>
-					<ul class="drop">
-						<li>Select 1</li>
-						<li>Select 2</li>
-						<li>Select 3</li>
-						<li>Select 4</li>
-					</ul>
-					<input type="hidden" id="select">
-				</div>
-			</div>
-			<div class="select-block slc-check large-select">
-				<div class="title">
-					<p class="large-p">Дополнительная информация о пассажире</p>
-				</div>
-				<input type="text" class="birthday">
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="save-after save-after-4 save-after-avia2">
-	<div class="container">
-		<a href="#" class="save-input save-link">Вернуться</a>
-		<a href="#" class="continue-input continue-link">Продолжить</a>
-		<a href="#" class="save-input save-link save-next">Сохранить</a>
-		<div class="clear"></div>
+		<div class="container">
+			<a href="#" class="save-input save-link">Вернуться</a>
+			<a href="#" class="continue-input continue-link">Продолжить</a>
+			<a href="#" class="save-input save-link save-next">Сохранить</a>
+			<div class="clear"></div>
+		</div>
 	</div>
-</div>
+
+
+
+
+
 
 <script src="js/jquery1.7.1.js"></script>
 <script src="js/script.js"></script>

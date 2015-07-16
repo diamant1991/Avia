@@ -1356,6 +1356,11 @@ a {
 .customer-radio .radio {
   padding-top: 7px;
 }
+.main-pass {
+  font-family: 'OpenSansLight';
+  position: relative;
+  top: 10px;
+}
 /*************** ie8 **************/
 
 .ie8 .check,
