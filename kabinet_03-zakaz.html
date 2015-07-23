@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>Kabinet 03-zakaz</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/ui-slider.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li class="active">
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="three-buttons">
+	<div class="container">
+		<div class="btn-block clearfix">
+			<div class="btn-pos">
+				<div class="var-check">
+					<a href="#" class="active">Заказы авиа</a>
+				</div>
+				<div class="var-check">
+					<a href="#" class="">Заказы Ж/Д билеты</a>
+				</div>
+				<div class="var-check">
+					<a href="#" class="">Заказы отдых</a>
+				</div>
+				<div class="var-check">
+					<a href="#" class="">Сменить пароль</a>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div><!-- three buttons -->
+
+<div class="container">
+	<div class="cabinet-title">Личный кабинет</div>
+	<div class="cabinet-info clearfix">
+		<div class="cab-row">
+			<span>Имя:</span><span>Евгений Анатольевич Лавриенко</span>
+		</div>
+		<div class="cab-row">
+			<span>Email:</span><span>lavrinenkoe@infoport.ru</span>
+		</div>
+		<div class="cab-row">
+			<span>Телефон:</span><span>8926546565</span>
+		</div>
+	</div>
+	<div class="hr"></div>
+	<div class="cabinet-info clearfix">
+		<div class="cab-row">
+			<span>Заказ:</span><span>№ 1865</span>
+		</div>
+		<div class="cab-row">
+			<span>PNR:</span><span>POBWOOD</span>
+		</div>
+		<div class="cab-row">
+			<span>Статус:</span><span>В процессе оплаты картой</span>
+		</div>
+		<div class="cab-row">
+			<span>Продукт:</span><span>ТРАНСАЭРО UN (BSP)</span>
+		</div>
+		<div class="cab-row">
+			<span>Выписка до:</span><span></span>
+		</div>
+		<div class="cab-row">
+			<span>Комментарий:</span><span></span>
+		</div>
+	</div>
+	<div class="hr"></div>
+	<div class="cabinet-title">Билеты</div>
+	<table class="cabinet-infolist">
+		<thead>
+			<tr>
+				<td width="70">
+					<div class="checkboxes clearfix">
+						<div class="check">
+							<input type="checkbox" value="jQuery">
+						</div>
+					</div>
+				</td>
+				<td width="320">№</td>
+				<td width="540">Описание</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<div class="checkboxes clearfix">
+						<div class="check">
+							<input type="checkbox" value="jQuery">
+						</div>
+					</div>
+				</td>
+				<td>TWIWOAOIDOI985715 17.06.2015 11:11:43</td>
+				<td>описание описание описание описание описание описание </td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cabinet-title">Тарифы и сборы</div>
+	<table class="cabinet-infolist">
+		<thead>
+			<tr>
+				<td width="40">№</td>
+				<td width="60">Пасс</td>
+				<td width="120">Базовый тариф</td>
+				<td width="240">Сборы</td>
+				<td width="470">Итого</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>ADT</td>
+				<td class="bold">2550,00</td>
+				<td>XT 4528 (3215YQ I 1250YR I 63RU)</td>
+				<td class="bold">7078,00</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="total">Сумма к оплате: <span></span> Итоговая стоимость: <span>7154,50 руб</span></div>
+	<div class="cabinet-title">Рейсы</div>
+	<table class="cabinet-infolist">
+		<thead>
+			<tr>
+				<td width="35">№</td>
+				<td width="205">Вылет</td>
+				<td width="140">Прилет</td>
+				<td width="185">Авиакомпания/Борт</td>
+				<td width="60">Рейс</td>
+				<td width="150">Статус</td>
+				<td width="155">Класс</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>(VKO) Внуково Москва TERMINAL A DOM AND INTL (A) 17.07.2015 23:05</td>
+				<td>(IKT) Иркутск 18.07.2015 09:45</td>
+				<td>Трансаэро BOEING 767-300/300ER</td>
+				<td>0115</td>
+				<td>Holds confirmed status.</td>
+				<td>Экономический (W)</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="cabinet-title2">Пассажиры</div>
+	<table class="cabinet-infolist">
+		<thead>
+			<tr>
+				<td width="35">№</td>
+				<td width="100">Фамилия</td>
+				<td width="100">Имя</td>
+				<td width="40">Пол</td>
+				<td width="115">Дата рождения</td>
+				<td width="175">Тип документа</td>
+				<td width="145">Номер документа</td>
+				<td width="170">Контакты</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>LAVR</td>
+				<td>EGV MR</td>
+				<td>М</td>
+				<td>20.04.1972</td>
+				<td>Р <br/> <span>Действует до 01.01.2023</span></td>
+				<td>123123123</td>
+				<td>Мобильный: 123123123<br/>Агентство: 123123123</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="action-buttons">
+		<a href="#" class="save-input save-link">Вернуться</a>
+		<a href="#" class="save-input save-link save-next">Отменить рейс(ы)</a>
+	</div>
+</div>
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

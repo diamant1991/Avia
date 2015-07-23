@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>Kabinet 01</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li class="profilename active">
+					<span><a href="">Иванов Иван</a></span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="inbox-block1">
+	<div class="container clearfix">
+		<div class="select slct-inbox">
+			<a href="javascript:void(0);" class="slct slct-300">Входящие</a>
+			<ul class="drop drop-300" style="overflow: hidden; display: none;">
+				<li>Select 1</li>
+				<li>Select 2</li>
+				<li>Select 3</li>
+				<li>Select 4</li>
+			</ul>
+			<input type="hidden" id="select">
+		</div>
+		<div class="">
+			<a href="#" class="continue-input new-message">Новое сообщение</a>
+		</div>
+	</div>
+</div>
+
+<div class="inbox-block2">
+	<div class="container">
+		<span class="p-title">Показывать</span>
+		<div class="select-wrapper clearfix">
+			<div class="select select-block">
+				<a href="javascript:void(0);" class="slct slct-60">7</a>
+				<ul class="drop slct-60" style="overflow: hidden; display: none;">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+			<div class="select select-block">
+				<a href="javascript:void(0);" class="slct slct-140">Столбцы</a>
+				<ul class="drop slct-140" style="overflow: hidden; display: none;">
+					<li>Столбцы 1</li>
+					<li>Столбцы 2</li>
+					<li>Столбцы 3</li>
+					<li>Столбцы 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+			<div class="select-block clearfix">
+				<ul class="inbox-paging clearfix">
+					<li class="inbox-list-prev"><a href="#">&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="#">1</a></li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li class="inbox-list-next"><a href="#">&nbsp;&nbsp;&nbsp;</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="inbox-block3">
+	<div class="container">
+		<div class="inbox-search-block">
+			<div class="input-block">
+				<input type="text" class="pd-10">
+				<input type="submit" value="" class="inbox-search-button">
+			</div>
+		</div>
+		
+		<table class="cabinet-infolist margtop10">
+			<thead class="th-underline">
+				<tr>
+					<td width="80">№</td>
+					<td width="80">Тип</td>
+					<td width="80">!</td>
+					<td width="160">От</td>
+					<td width="160">Тема</td>
+					<td width="160">Создан</td>
+					<td width="80">Закрыто</td>
+					<td width="140">Группа</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="#" class="inbox-link">1308</a></td>
+					<td><img src="images/mail-close.png"></td>
+					<td>&nbsp;</td>
+					<td>ПОЛЕТ(филиал)<br/>менеджер</td>
+					<td>Новое сообщение</td>
+					<td>21/12/2009 12:55</td>
+					<td>false</td>
+					<td>Ошибка в программе</td>
+				</tr>
+				<tr>
+					<td><a href="#" class="inbox-link">1308</a></td>
+					<td><img src="images/mail-open.png"></td>
+					<td>&nbsp;</td>
+					<td>ПОЛЕТ(филиал)<br/>менеджер</td>
+					<td>Новое сообщение</td>
+					<td>21/12/2009 12:55</td>
+					<td>false</td>
+					<td>Ошибка в программе</td>
+				</tr>
+				<tr>
+					<td><a href="#" class="inbox-link">1308</a></td>
+					<td><img src="images/mail-close.png"></td>
+					<td>&nbsp;</td>
+					<td>ПОЛЕТ(филиал)<br/>менеджер</td>
+					<td>Новое сообщение</td>
+					<td>21/12/2009 12:55</td>
+					<td>false</td>
+					<td>Ошибка в программе</td>
+				</tr>
+				<tr>
+					<td><a href="#" class="inbox-link">1308</a></td>
+					<td><img src="images/mail-close.png"></td>
+					<td>&nbsp;</td>
+					<td>ПОЛЕТ(филиал)<br/>менеджер</td>
+					<td>Новое сообщение</td>
+					<td>21/12/2009 12:55</td>
+					<td>false</td>
+					<td>Ошибка в программе</td>
+				</tr>
+				<tr>
+					<td><a href="#" class="inbox-link">1308</a></td>
+					<td><img src="images/mail-open.png"></td>
+					<td>&nbsp;</td>
+					<td>ПОЛЕТ(филиал)<br/>менеджер</td>
+					<td>Новое сообщение</td>
+					<td>21/12/2009 12:55</td>
+					<td>false</td>
+					<td>Ошибка в программе</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="inbox-total">Всего: <span>63</span></div>
+	</div>
+</div>
+	
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/radio.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

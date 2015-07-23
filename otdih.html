@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 8]><html class="ie8"> <![endif]-->
+	<title>Otdih</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/ui-slider.css">
+	<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="css/jquery.rollbar.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+
+<div class="top-panel">
+	<div class="container clearfix">
+		<div class="left-list">
+			<ul class="clearfix tabs">
+				<li class="avia"><a href="#">Авиа</a></li>
+				<li class="tickets"><a href="#">Ж/д билеты</a></li>
+				<li class="rooms"><a href="#">отели</a></li>
+				<li class="active recreation"><a href="#">отдых</a></li>
+			</ul>
+		</div>
+		<div class="right-list">
+			<ul class="clearfix">
+				<li>
+					<span>Иванов Иван</span>
+				</li>
+				<li>
+					<a href="#" class="cabinet">кабинет</a>
+				</li>
+				<li class="exit">
+					<a href="#">выйти</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- top panel -->
+
+<div class="container">
+	<div class="select-wrapper clearfix">
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Тип тура</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">Прочие</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Тур</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-300">Выберите тур</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="date">
+			<div class="input-block date-picker-otdih">
+				<p class="p-title">Дата заезда</p>
+				<input type="text" class="date-input-css hasDatepicker" id="dp1437427618421">
+				<span class="cal-icon"></span>
+			</div>	
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Смещение дней</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">3</a>
+				<ul class="drop">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Дней от и до</p>
+			</div>
+			<div class="select days-from-otdih">
+				<a href="javascript:void(0);" class="slct slct-60">3</a>
+				<ul class="drop slct-60">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+			<div class="select days-to-otdih">
+				<a href="javascript:void(0);" class="slct slct-60">3</a>
+				<ul class="drop slct-60">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+	</div>
+	
+	<div class="select-wrapper otdih-block clearfix">
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Минимальная цена</p>
+			</div>
+			<input type="text">
+		</div>
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Максимальная цена</p>
+			</div>
+			<input type="text">
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Основных мест</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">—</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Дополнительных мест</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">—</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Взрослых</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">—</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+		<div class="select-block">
+			<div class="title">
+				<p class="large-p">Детей</p>
+			</div>
+			<div class="select">
+				<a href="javascript:void(0);" class="slct slct-140">—</a>
+				<ul class="drop">
+					<li>Select 1</li>
+					<li>Select 2</li>
+					<li>Select 3</li>
+					<li>Select 4</li>
+				</ul>
+				<input type="hidden" id="select">
+			</div>
+		</div>
+	</div>
+	
+	<div class="select-wrapper borderbottom clearfix">
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Тип отеля</p>
+			</div>
+			<div class="checkboxes otdih-checkbox clearfix">
+				<div class="check">
+					Все
+					<input type="checkbox" value="2">
+				</div>
+			</div>
+			<div class="checkboxes checkboxes-slide otdih-slide clearfix" id="example">
+				<div class="check">
+					Город 1
+					<input type="checkbox" value="gorod1" />
+				</div>
+				<div class="check">
+					Город 2
+					<input type="checkbox" value="gorod2" />
+				</div>
+				<div class="check">
+					Город 3
+					<input type="checkbox" value="gorod3" />
+				</div>
+				<div class="check">
+					Город 4
+					<input type="checkbox" value="gorod4" />
+				</div>
+				<div class="check">
+					Город 5
+					<input type="checkbox" value="gorod5" />
+				</div>
+				<div class="check">
+					Город 6
+					<input type="checkbox" value="gorod6" />
+				</div>
+				<div class="check">
+					Город 7
+					<input type="checkbox" value="gorod7" />
+				</div>
+			</div>
+		</div>
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Группа</p>
+			</div>
+			<div class="checkboxes otdih-checkbox clearfix">
+				<div class="check">
+					Все
+					<input type="checkbox" value="2">
+				</div>
+			</div>
+			<div class="checkboxes checkboxes-slide otdih-slide clearfix" id="example1">
+				<div class="check">
+					Город 1
+					<input type="checkbox" value="gorod1" />
+				</div>
+				<div class="check">
+					Город 2
+					<input type="checkbox" value="gorod2" />
+				</div>
+				<div class="check">
+					Город 3
+					<input type="checkbox" value="gorod3" />
+				</div>
+				<div class="check">
+					Город 4
+					<input type="checkbox" value="gorod4" />
+				</div>
+				<div class="check">
+					Город 5
+					<input type="checkbox" value="gorod5" />
+				</div>
+				<div class="check">
+					Город 6
+					<input type="checkbox" value="gorod6" />
+				</div>
+				<div class="check">
+					Город 7
+					<input type="checkbox" value="gorod7" />
+				</div>
+			</div>
+		</div>
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Название</p>
+			</div>
+			<div class="checkboxes otdih-checkbox clearfix">
+				<div class="check">
+					Все
+					<input type="checkbox" value="2">
+				</div>
+			</div>
+			<div class="checkboxes checkboxes-slide otdih-slide clearfix" id="example2">
+				<div class="check">
+					Город 1
+					<input type="checkbox" value="gorod1" />
+				</div>
+				<div class="check">
+					Город 2
+					<input type="checkbox" value="gorod2" />
+				</div>
+				<div class="check">
+					Город 3
+					<input type="checkbox" value="gorod3" />
+				</div>
+				<div class="check">
+					Город 4
+					<input type="checkbox" value="gorod4" />
+				</div>
+				<div class="check">
+					Город 5
+					<input type="checkbox" value="gorod5" />
+				</div>
+				<div class="check">
+					Город 6
+					<input type="checkbox" value="gorod6" />
+				</div>
+				<div class="check">
+					Город 7
+					<input type="checkbox" value="gorod7" />
+				</div>
+			</div>
+		</div>
+		<div class="select-block slc-check">
+			<div class="title">
+				<p class="large-p">Тип размещения</p>
+			</div>
+			<div class="checkboxes otdih-checkbox clearfix">
+				<div class="check">
+					Все
+					<input type="checkbox" value="2">
+				</div>
+			</div>
+			<div class="checkboxes checkboxes-slide otdih-slide clearfix" id="example3">
+				<div class="check">
+					Город 1
+					<input type="checkbox" value="gorod1" />
+				</div>
+				<div class="check">
+					Город 2
+					<input type="checkbox" value="gorod2" />
+				</div>
+				<div class="check">
+					Город 3
+					<input type="checkbox" value="gorod3" />
+				</div>
+				<div class="check">
+					Город 4
+					<input type="checkbox" value="gorod4" />
+				</div>
+				<div class="check">
+					Город 5
+					<input type="checkbox" value="gorod5" />
+				</div>
+				<div class="check">
+					Город 6
+					<input type="checkbox" value="gorod6" />
+				</div>
+				<div class="check">
+					Город 7
+					<input type="checkbox" value="gorod7" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="continue-input find-button">Найти</a>
+</div>
+
+<script src="js/jquery1.7.1.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.rollbar.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#example').rollbar({zIndex:80}); 
+	$('#example1').rollbar({zIndex:80}); 
+	$('#example2').rollbar({zIndex:80}); 
+	$('#example3').rollbar({zIndex:80}); 
+});
+</script>
+<script src="js/jquery.ui-slider.js"></script>
+<script src="js/datepicker.js"></script>
+<script>
+	$(function(){
+		$(".date-input-css").datepicker({ 
+			dateFormat: 'dd.mm.yy',
+			showOtherMonths: true,
+         selectOtherMonths: true
+		});
+	})
+</script>
+<script src="js/radio.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
