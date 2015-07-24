@@ -68,6 +68,14 @@ jQuery(function() {
     });
 });
 
+
+$(".slct").each(function (){
+    var dropBlock = $(this).parent().find('.drop').find('li.active');
+    var selectResult = dropBlock.html();
+    dropBlock.parent().parent().find('input').val(selectResult);
+    dropBlock.parent().parent().find('.slct').removeClass('active').html(selectResult);
+})
+
 $('.slct').click(function(){
 	var dropBlock = $(this).parent().find('.drop');
 
